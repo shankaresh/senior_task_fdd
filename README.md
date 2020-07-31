@@ -8,4 +8,4 @@
 - **psd** file is given.
 - serive module to work images module is to create in web.
 - it should be similar to psd file.
-- [result]()
+- [result](https://github.com/shankaresh/senior_task_fdd/tree/master/task%202)
