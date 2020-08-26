@@ -19,5 +19,5 @@
 ### Task 4 :
 
 **javascript tasks**
-- [find second largest number in array]()
-- [making some string pattern]()
+- [find second largest number in array](https://github.com/shankaresh/senior_task_fdd/blob/master/task%204/second_lg.js)
+- [making some string pattern](https://github.com/shankaresh/senior_task_fdd/blob/master/task%204/stringman.js)
