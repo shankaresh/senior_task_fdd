@@ -26,4 +26,4 @@ while(x>=0){
     x--;
     y++;
 }
-console.log(resultSen);
+console.log(resultSen); //ansaipspilhet
