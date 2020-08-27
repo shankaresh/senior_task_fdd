@@ -3,8 +3,8 @@ var lg1=arr[0];
 var lg2=arr[1];
 
 for (var i=0 ; i < arr.length; i++) {
-    if (arr[i]!=(lg1 || lg2)) {
-        if (arr[i]>lg1) {
+    if (arr[i]!=(lg1 || lg2)) { //ignore repeated
+        if (arr[i]>lg1) { 
             lg2=lg1;
             lg1=arr[i];
         } else {
@@ -14,4 +14,4 @@ for (var i=0 ; i < arr.length; i++) {
         }
     }
 }
-console.log(lg2);
+console.log(lg2); // 8
