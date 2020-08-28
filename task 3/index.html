@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
+    <title>Acrostia-Web</title>
+    <link rel="stylesheet" href="./style/styles.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<body>
+    <!-- ###################### header ###################### -->
+        
+    <header class="header fixed">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="LOGO"/>
+                </a>
+            </div>
+            <div class="top-nav">
+                <nav class="nav clearfix">
+                    <a id="menu-toggle" class="anchor-link"><img src="./images/menu.png" alt=""></a>
+                    <ul class="nav text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link scroll" href="#homepage">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#servicepage">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#aboutpage">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#workpage">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#contactspage">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header").addClass("fixed");
+				}else{
+					$(".header").removeClass("fixed");
+				}
+			 });
+			 
+		});
+        </script>
+        
+    <main class="yscroll">
+        <!-- ###################### page 1 ###################### -->
+
+        <section class="page1" id="homepage">
+            <div class="container">
+                <div class="box">
+                    <div class="GeneratedText">
+                        GOOD IDEAS comes
+                    </div>
+                    <div class="first">
+                        FIRST!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ###################### page 2 ###################### -->
+
+        <section class="page2" id="servicepage"> 
+            <div class="container">
+                <div class="service-head">
+                    <h3 class="title">OUR SERVICES</h3>
+                    <span>Cras commodo mattis justo nec <b>lobortis</b>. Nam ut tellus lobortis, ullamcorper massa sit amet</span>
+                    <p class="desc">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+                </div>
+                <div class="row service-top">
+                    <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom">
+                        <div class="service-grid">
+                            <a href="#"><img class="img-responsive" src="images/s1.png" alt="Researching-logo"></a>
+                            <h5>Researching</h5>
+                            <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom">
+                        <div class="service-grid">
+                            <a href="#"><img class="img-responsive" src="images/s2.png" alt="Designing-logo"></a>
+                            <h5>Designing</h5>
+                            <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom">
+                        <div class="service-grid">
+                            <a href="#"><img class="img-responsive" src="images/s3.png" alt="Development-logo"></a>
+                            <h5>Development</h5>
+                            <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom">
+                        <div class="service-grid">
+                            <a href="#"><img class="img-responsive" src="images/s4.png" alt="Launch-logo"></a>
+                            <h5>Launch</h5>
+                            <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+
+        <!-- ###################### page 3 ###################### -->
+
+        <section class="page3" id="aboutpage"> 
+            <div class="container">
+                <h3 class="title">Who we are &amp; what we do</h3>
+                <p class="desc gap-bottom">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+                <div><a href="#" class="meet">Meet the team<span></span></a></div>
+                <div class="row team-top">
+                    <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom team-top-grid">
+                        <div class="team-grid">
+                            <a href="#"><label> </label></a>
+                            <h6>Anton Petrov</h6>
+                            <small>General manager</small>
+                            <ul class="social">
+                                <li class="facebook"><a href="https://www.facebook.com/"><span> </span> </a></li>
+                                <li class="twitter"><a href="https://twitter.com/"><span> </span> </a></li>
+                                <li class="gmail"><a href="https://mail.google.com/mail/u/0/"><span> </span> </a></li>
+                                <li class="inline"><a href="https://www.linkedin.com/in/"><span> </span> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom team-top-grid">
+                        <div class="team-grid">
+                            <a href="#"><label> </label></a>
+                            <h6>Kirl DONCHEV</h6>
+                            <small>Design Master</small>
+                            <ul class="social">
+                                <li class="facebook"><a href="https://www.facebook.com/"><span> </span> </a></li>
+                                <li class="twitter"><a href="https://twitter.com/"><span> </span> </a></li>
+                                <li class="gmail"><a href="https://mail.google.com/mail/u/0/"><span> </span> </a></li>
+                                <li class="inline"><a href="https://www.linkedin.com/in/"><span> </span> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom team-top-grid">
+                        <div class="team-grid">
+                            <a href="#"><label> </label></a>
+                            <h6>Ilian Bonev</h6>
+                            <small>Developer Ninja</small>
+                            <ul class="social">
+                                <li class="facebook"><a href="https://www.facebook.com/"><span> </span> </a></li>
+                                <li class="twitter"><a href="https://twitter.com/"><span> </span> </a></li>
+                                <li class="gmail"><a href="https://mail.google.com/mail/u/0/"><span> </span> </a></li>
+                                <li class="inline"><a href="https://www.linkedin.com/in/"><span> </span> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom team-top-grid">
+                        <div class="team-grid">
+                            <a href="#"><label> </label></a>
+                            <h6>Doni Stamov</h6>
+                            <small>SEO Guru</small>
+                            <ul class="social">
+                                <li class="facebook"><a href="https://www.facebook.com/"><span> </span> </a></li>
+                                <li class="twitter"><a href="https://twitter.com/"><span> </span> </a></li>
+                                <li class="gmail"><a href="https://mail.google.com/mail/u/0/"><span> </span> </a></li>
+                                <li class="inline"><a href="https://www.linkedin.com/in/"><span> </span> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ###################### page 4 ###################### -->
+
+        <section class="page4" id="workpage">
+            <div class="container">
+                <h3 class="title">OUR WORK</h3>
+                <p class="desc">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+                <div class="mod-content clearfix">
+                    <div class="navbar collapse navbar-collapse port-mix-bor">
+                        <h6 style="float: left;font-weight: 300;font-size: 25px;">PORTFOLIO</h6>
+                        <ul style="float: right;" class="resp-tabs-list nav">
+                            <li class="resp-tab-active resp-tab-item" id="all-btn">
+                                <span>All</span>
+                            </li>
+                            <li class="resp-tab-item" id="photo-btn">
+                                <span>Photograpy</span>
+                            </li> 
+                            <li class="resp-tab-item" id="logo-btn">
+                                <span>Logo Design</span>
+                            </li>     
+                            <li class="resp-tab-item" id="web-btn">
+                                <span>Web Design</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar collapse navbar-collapse tab-content">
+                        <ul class="sp-portfolio-items row" style="justify-items: center;">
+                            <li id="id1" class="sp-portfolio-item col-lg-3 col-md-4 col-sm-6 gap-bottom navbar-nav">
+                                <div class="sp-portfolio-thumb">
+                                    <img src="./images/gallery_1.png" class="img-responsive" alt="AENEAN A ELIT">
+                                    <div class="sp-portfolio-overlay">
+                                        <a><img src="./images/icon-link.png"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="id2" class="sp-portfolio-item col-lg-3 col-md-4 col-sm-6 gap-bottom navbar-nav">
+                                <div class="sp-portfolio-thumb">
+                                    <img src="./images/gallery_8.png" class="img-responsive" alt="ALIQUAM">
+                                    <div class="sp-portfolio-overlay">
+                                        <a><img src="./images/icon-link.png"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="id3" class="sp-portfolio-item col-lg-3 col-md-4 col-sm-6 gap-bottom navbar-nav">
+                                <div class="sp-portfolio-thumb">
+                                    <img class="img-responsive" src="./images/gallery_2.png" alt="SUSPENDISSE LIBERO">
+                                    <div class="sp-portfolio-overlay">
+                                        <a><img src="./images/icon-link.png"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="id4" class="sp-portfolio-item col-lg-3 col-md-4 col-sm-6 gap-bottom navbar-nav">
+                                <div class="sp-portfolio-thumb">
+                                    <img class="img-responsive" src="./images/gallery_3.png" alt="MAECENAS FRINGILLA">
+                                    <div class="sp-portfolio-overlay">
+                                        <a><img src="./images/icon-link.png"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="id5" class="sp-portfolio-item col-lg-3 col-md-4 col-sm-6 gap-bottom navbar-nav">
+                                <div class="sp-portfolio-thumb">
+                                    <img class="img-responsive" src="./images/gallery_4.png" alt="DONEC VEHICULA">
+                                    <div class="sp-portfolio-overlay">
+                                        <a><img src="./images/icon-link.png"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="id6" class="sp-portfolio-item col-lg-3 col-md-4 col-sm-6 gap-bottom navbar-nav">
+                                <div class="sp-portfolio-thumb">
+                                    <img class="img-responsive" src="./images/gallery_5.png" alt="UT ET SAPIEN">
+                                    <div class="sp-portfolio-overlay">
+                                        <a><img src="./images/icon-link.png"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="id7" class="sp-portfolio-item col-lg-3 col-md-4 col-sm-6 gap-bottom navbar-nav">
+                                <div class="sp-portfolio-thumb">
+                                    <img class="img-responsive" src="./images/gallery_6.png" alt="QUIS MALESUADA">
+                                    <div class="sp-portfolio-overlay">
+                                        <a><img src="./images/icon-link.png"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="id8" class="sp-portfolio-item col-lg-3 col-md-4 col-sm-6 gap-bottom navbar-nav">
+                                <div class="sp-portfolio-thumb">
+                                    <img class="img-responsive" src="./images/gallery_7.png" alt="VESTIBULUM ANTE">
+                                    <div class="sp-portfolio-overlay">
+                                        <a><img src="./images/icon-link.png"></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            $('#all-btn').click(function(){
+                $('#id1').css('display','block');
+                $('#id2').css('display','block');
+                $('#id3').css('display','block');
+                $('#id4').css('display','block');
+                $('#id5').css('display','block');
+                $('#id6').css('display','block');
+                $('#id7').css('display','block');
+                $('#id8').css('display','block');
+            });
+            $('#logo-btn').click(function(){
+                $('#id1').css('display','block');
+                $('#id2').css('display','none');
+                $('#id3').css('display','block');
+                $('#id4').css('display','none');
+                $('#id5').css('display','block');
+                $('#id6').css('display','none');
+                $('#id7').css('display','block');
+                $('#id8').css('display','none');
+            });
+            $('#photo-btn').click(function(){
+                $('#id1').css('display','none');
+                $('#id2').css('display','block');
+                $('#id3').css('display','block');
+                $('#id4').css('display','none');
+                $('#id5').css('display','block');
+                $('#id6').css('display','block');
+                $('#id7').css('display','none');
+                $('#id8').css('display','block');
+            });
+            $('#web-btn').click(function(){
+                $('#id1').css('display','none');
+                $('#id2').css('display','block');
+                $('#id3').css('display','none');
+                $('#id4').css('display','block');
+                $('#id5').css('display','block');
+                $('#id6').css('display','none');
+                $('#id7').css('display','block');
+                $('#id8').css('display','none');
+            });
+            $('.resp-tabs-list .resp-tab-item').click(function(){
+                $('.resp-tabs-list .resp-tab-active').removeClass('resp-tab-active');
+                $(this).addClass('resp-tab-active');
+            });        
+        </script>
+        <!-- ###################### page 5 ###################### -->
+
+        <section id="contactspage"><div class="page5">
+            <div class="container">
+                <h3 class="title">CONTACT US</h3>
+                <p class="desc">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+                <div class="container-fluid row">
+                    <div class="sit-contact col-lg-3 col-md-6 col-sm-12 gap-bottom text-left">
+                        <h5>Address</h5>
+                        <div class="contact-add">
+                            <ul>
+                                <li><span>Acrostia</span></li>
+                                <li>Sevenoaks Rd</li>
+                                <li>Sevenoaks TN14 7HR, UK</li> 
+                            </ul>
+                        </div>
+                        <table class="contact-in">
+                            <tr class="phone">
+                                <td>Phone:</td>
+                                <td>&nbsp;</td>
+                                <td><span>+44 555 555 555</span></td>
+                            </tr>
+                            <tr class="phone">
+                                <td>Fax:</td>
+                                <td>&nbsp;</td>
+                                <td><span>+44 556  555 555</span></td>
+                            </tr>
+                            <tr class="phone">
+                                <td>E-mail:</td>
+                                <td>&nbsp;</td>
+                                <td><a href="mailto:info@example.com">info@acrostia.com </a></td>
+                            </tr>
+                            <tr class="phone">
+                                <td>Skype:</td>
+                                <td>&nbsp;</td>
+                                <td><span>Acrostia</span></td>
+                            </tr>                           
+                        </table>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 gap-bottom">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711700.98017636!2d64.4178175273949!3d20.009062995798843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1596910986068!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="contact-into col-lg-6 col-md-6 col-sm-12 gap-bottom text-left">
+                        <h5>Ask a question</h5>
+                        <form>
+                            <div class="contact-grid row">
+                                <div class="col-md-6 col-sm-6 contact-us">
+                                    <input type="text" value="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Name';}">
+                                </div>
+                                <div class="col-md-6 col-sm-6 contact-us">
+                                    <input type="text" value="Email-id" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Email-id';}">
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+                            <div class="send">
+                                <input type="submit" value="SEND">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div></div>
+        
+            <!-- ###################### footer ###################### -->
+
+            <footer class="footer text-center">
+                <div class="container-fluid">
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/"><span> </span> </a></li>
+                        <li class="twitter"><a href="https://twitter.com/"><span> </span></a></li>
+                        <li class="gmail"><a href="https://mail.google.com/mail/u/1/#inbox?compose=new"><span> </span> </a></li>
+                        <li class="print"><a href="https://www.linkedin.com/in/"><span> </span> </a></li>
+                    </ul>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+</body>
+<script>
+
+</script>
+
+</html>
