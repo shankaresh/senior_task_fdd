@@ -22,3 +22,11 @@
 - [find second largest number in array](https://github.com/shankaresh/senior_task_fdd/blob/master/task%204/second_lg.js)
 - [making some string pattern](https://github.com/shankaresh/senior_task_fdd/blob/master/task%204/stringman.js)
 - [concat first and last letter in string](https://github.com/shankaresh/senior_task_fdd/blob/master/task%204/concate.js)
+- [game with vowels]()
+- [pattern]()
+
+### Task 5 :
+
+**jquery tasks**
+- [input-box border-color change as error format]()
+- [4cards of checkboxies using prop(); disable other checkboxies]()
