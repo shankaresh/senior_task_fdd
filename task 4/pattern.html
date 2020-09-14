@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+    <script>
+        var name = 'shankaresh'
+        var num = 3;
+       
+        // Count variable that determines the number of stars to be printed
+        var starCount = 1;
+       
+       
+        for(var i = 0; i<name.length;i++){
+         // printing the letter
+         document.write(name[i]);
+         // checking if the starCount has exceeded than my input number, if so reset back to 1
+         if(starCount>num){
+          starCount = 1;
+         }
+         // print number of stars according to starCount variable
+         for(var j=1;j<=starCount;j++){
+          document.write('*');
+         }
+         // increment starCount after printing every letter
+         starCount++;
+         // breaking the line after printing every letter
+         document.write('<br>');
+        }
+    </script>
+</body>
+</html>

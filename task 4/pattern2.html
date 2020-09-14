@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern2</title>
+</head>
+<body>
+    <script>
+        var str = 'shankaresh';
+        var num = 4;
+        var starCount = 1;
+        var incrementFlag = 1;
+        
+        for (var i=0;i<str.length;i++){
+            if(incrementFlag == 1){
+                document.write(str[i]);
+                for (var j=1;j<=starCount;j++){
+                    document.write('*');
+                }
+
+                if (starCount == num){
+                    starCount--;
+                    incrementFlag = 0;
+                }else{
+                    starCount++;
+                }
+            }else if (incrementFlag == 0){
+                document.write(str[i]);
+                for(var j=1;j<=starCount;j++){
+                    document.write('*');
+                }
+
+                if (starCount == 1){
+                    starCount++;
+                    incrementFlag = 1;
+                }else{
+                    starCount--;
+                }
+            }
+
+            document.write('<br>');
+        }
+    </script>
+</body>
+</html>
