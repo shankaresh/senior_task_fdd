@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check all checkbox Prop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+    /* for design */
+    .cards-top {
+        padding: 1em 0 0;
+    }
+    .gap-bottom {
+        padding: 20px;
+    }
+    .grid {
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 1em 1em;
+    }
+
+
+
+
+    /* for jquery */
+    .strike {
+        text-decoration: line-through;
+    }
+</style>
+<body style="background-color: royalblue;">
+    <section class="container">
+        <div class="row cards-top">
+            <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom">
+                <div class="columns grid">
+                    <div><input type="checkbox" name="case1" class="all" id="all1" value="0"><label>Select all</label></div>
+                    <div><input type="checkbox" name="case1" class="checkbox1" id="checkbox1" value="1"><label>Python</label></div>
+                    <div><input type="checkbox" name="case1" class="checkbox2" id="checkbox1" value="2"><label>Javascript</label></div>
+                    <div><input type="checkbox" name="case1" class="checkbox3" id="checkbox1" value="3"><label>Angular</label></div>
+                    <div><input type="checkbox" name="case1" class="checkbox4" id="checkbox1" value="4"><label>React</label></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom">
+                <div class="columns grid">
+                    <div><input type="checkbox" name="case2" class="all" id="all2" value="0"><label>Select all</label></div>
+                    <div><input type="checkbox" name="case2" class="checkbox1" id="checkbox2" value="1"><label>Python</label></div>
+                    <div><input type="checkbox" name="case2" class="checkbox2" id="checkbox2" value="2"><label>Javascript</label></div>
+                    <div><input type="checkbox" name="case2" class="checkbox3" id="checkbox2" value="3"><label>Angular</label></div>
+                    <div><input type="checkbox" name="case2" class="checkbox4" id="checkbox2" value="4"><label>React</label></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom">
+                <div class="columns grid">
+                    <div><input type="checkbox" name="case3" class="all" id="all3" value="0"><label>Select all</label></div>
+                    <div><input type="checkbox" name="case3" class="checkbox1" id="checkbox3" value="1"><label>Python</label></div>
+                    <div><input type="checkbox" name="case3" class="checkbox2" id="checkbox3" value="2"><label>Javascript</label></div>
+                    <div><input type="checkbox" name="case3" class="checkbox3" id="checkbox3" value="3"><label>Angular</label></div>
+                    <div><input type="checkbox" name="case3" class="checkbox4" id="checkbox3" value="4"><label>React</label></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gap-bottom">
+                <div class="columns grid">
+                    <div><input type="checkbox" name="case4" class="all" id="all4" value="0"><label>Select all</label></div>
+                    <div><input type="checkbox" name="case4" class="checkbox1" id="checkbox4" value="1"><label>Python</label></div>
+                    <div><input type="checkbox" name="case4" class="checkbox2" id="checkbox4" value="2"><label>Javascript</label></div>
+                    <div><input type="checkbox" name="case4" class="checkbox3" id="checkbox4" value="3"><label>Angular</label></div>
+                    <div><input type="checkbox" name="case4" class="checkbox4" id="checkbox4" value="4"><label>React</label></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        $(document).ready(function(){
+            $('input').change(function(){
+                var isChecked = $(this).prop('checked');
+                var currentClass = $(this).attr('class');
+                var currentName = $(this).attr('name');
+                var currentId = $(this).attr('id');
+                if (isChecked == true){
+                    $('.'+currentClass).not(this).attr('disabled',true);
+                    $('.'+currentClass).not(this).siblings('label').css('text-decoration','line-through');
+                }else if(isChecked == false){
+                    $('.'+currentClass).not(this).attr('disabled',false);
+                    $('.'+currentClass).not(this).siblings('label').css('text-decoration','none');
+                }
+
+                if(currentClass === "all"){
+                    $("input[name="+currentName+"]").prop('checked', isChecked);
+                }
+                
+                // var idd="all"+currentName[4];
+                // if($("#"+currentId).length == $("#"+currentClass+":checked").length) {
+                //     $("#"+idd).prop('checked', true);
+                // }else{
+                //     $("#"+idd).prop('checked', false);
+                // }
+                
+            });
+        });
+    </script>
+</body>
+</html>
