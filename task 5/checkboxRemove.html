@@ -74,16 +74,16 @@
                 var currentClass = $(this).attr('class');
                 var currentName = $(this).attr('name');
                 if (isChecked == true){
-                    $('input[name='+currentName+']').not(this).siblings('label').hide();
-                    $('.'+currentClass).not(this).siblings('label').hide();
-                    $('input[name='+currentName+']').not(this).hide();
-                    $('.'+currentClass).not(this).hide();
+                    $('input[name='+currentName+']').not(this).siblings('label').fadeOut("slow");
+                    $('.'+currentClass).not(this).siblings('label').fadeOut("slow");
+                    $('input[name='+currentName+']').not(this).fadeOut("slow");
+                    $('.'+currentClass).not(this).fadeOut("slow");
                 } 
             });
 
             $('#reset').click(function(){
-                $('input[type=checkbox]').show();
-                $('input[type=checkbox]').siblings('label').show();
+                $('input[type=checkbox]').fadeIn("slow");
+                $('input[type=checkbox]').siblings('label').fadeIn("slow");
             });
         });
     </script>
