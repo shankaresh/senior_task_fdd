@@ -32,3 +32,4 @@
 - [input-box border-color change as error format](https://github.com/shankaresh/senior_task_fdd/blob/master/task%205/boxalert.html)
 - [4cards of checkboxies using prop(); disable other checkboxies](https://github.com/shankaresh/senior_task_fdd/blob/master/task%205/checkboxProp.html)
 - [for each checkbox only one value and with reset](https://github.com/shankaresh/senior_task_fdd/blob/master/task%205/checkboxRemove.html)
+- [select all function checking](https://github.com/shankaresh/senior_task_fdd/blob/master/task%205/checkboxremove2.html)
