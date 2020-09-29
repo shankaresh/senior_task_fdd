@@ -25,13 +25,14 @@
       padding: 1em;
     }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <h2>No Of Referee</h2>
+  <h2>NO OF REFEREE</h2>
   <div class="row">
     <div class="column" style="background-color:#aaa;">
-      <h3>how many referee:</h3>
+      <h3>How many referee:</h3>
       <select id="noof">
         <option>0</option>
         <option>1</option>
@@ -40,40 +41,71 @@
         <option>4</option>
       </select>
       <hr />
-      <h3>referee form</h3>
+      <h3>Referee form:</h3>
       <p id="refereeForm">
       </p>
     </div>
     <div class="column" style="background-color:#bbb;">
-      <h2>Display Referee</h2>
+      <h3>Display Referee:</h3>
       <p id="result"></p>
     </div>
   </div>
 </body>
 <script>
-  document.getElementById("noof").onchange = function () {
-    var e = document.getElementById("noof").value;
-    var form= "<div id='formBlock'><label>ref name:</label><input type='text' name='refname' class='myform[]'><br/><label>ref age:</label><input type='number' name='refage' class='myform[]'></div><br/>";
-    var subBut="<button id='submitButton' style='background-color:crimson;'>SUBMIT</button>";
-    if (e>0){
-      document.getElementById('refereeForm').innerHTML=form.repeat(e)+subBut;
-    }
-    else {
-      document.getElementById('refereeForm').innerHTML=form.repeat(e);
-    }
-    document.getElementById('submitButton').onclick = function() {
-      document.getElementById('result').innerHTML="";
-      var inputs = document.getElementsByClassName( 'myform[]' );
-      var index=0;
-      var i=1;
-      while (index<inputs.length) {
-        document.getElementById('result').innerHTML+='<div style="text-decoration: underline;">REFEREE '+i+':</div><br>NAME:'+inputs[index].value+'<br>AGE:'+inputs[index+1].value+'<br><br>';
-        index+=2;
-        i++;
-      }
-    };
-  };
+  // ********************** JAVASCRIPT **********************
 
+  // document.getElementById("noof").onchange = function () {
+  //   var e = document.getElementById("noof").value;
+  //   var form= "<div id='formBlock'><label>ref name:</label><input type='text' name='refname' class='myform[]'><br/><label>ref age:</label><input type='number' name='refage' class='myform[]'></div><br/>";
+  //   var subBut="<button id='submitButton' style='background-color:crimson;'>SUBMIT</button>";
+  //   if (e>0){
+  //     document.getElementById('refereeForm').innerHTML=form.repeat(e)+subBut;
+  //   }
+  //   else {
+  //     document.getElementById('refereeForm').innerHTML=form.repeat(e);
+  //   }
+  //   document.getElementById('submitButton').onclick = function() {
+  //     document.getElementById('result').innerHTML="";
+  //     var inputs = document.getElementsByClassName( 'myform[]' );
+  //     var index=0;
+  //     var i=1;
+  //     while (index<inputs.length) {
+  //       document.getElementById('result').innerHTML+='<div style="text-decoration: underline;">REFEREE '+i+':</div><br>NAME:'+inputs[index].value+'<br>AGE:'+inputs[index+1].value+'<br><br>';
+  //       index+=2;
+  //       i++;
+  //     }
+  //   };
+  // };
+
+  // ********************** JQUERY **********************
+
+  $(document).ready(function(){
+    $('#noof').change(function(){
+      var e = $(this).val();
+      var form="<div id='formBlock'><input type='text' name='refname' class='myform[]' placeholder='enter the referee name'><br/><input type='number' name='refage' class='myform[]' placeholder='enter the referee age'></div><br/>";
+      var subBut="<button id='submitButton' style='background-color: crimson;'>SUBMIT</button>";
+      $('#refereeForm').children().remove();
+      if (e>0) {
+        for(var i=1;i<=e;i++) {
+          $('#refereeForm').append(form);
+        }
+        $('#refereeForm').append(subBut);
+      }
+      $('#submitButton').click(function(){
+        $('#result').children().remove();
+        var inputs=$("input[class='myform[]']");
+        var index=0;
+        var i=1;
+        console.log(inputs.length);
+        while (index<inputs.length) {
+          var res='<div class="disBlock"><div style="text-decoration: underline;">REFEREE '+i+':</div><br>NAME:'+inputs.eq(index).val()+'<br>AGE:'+inputs.eq(index+1).val()+'</div><br><br>';
+          $('#result').append(res);
+          index+=2;
+          i++;
+        }
+      });
+    });
+  });
   
 </script>
 
