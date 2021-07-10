@@ -8,13 +8,15 @@
 - **psd** file is given.
 - serive module to work images module is to create in web.
 - it should be similar to psd file.
-- [view](https://github.com/shankaresh/senior_task_fdd/tree/master/task%202)
+- [code](https://github.com/shankaresh/senior_task_fdd/tree/master/task%202)
+- [view](https://shankaresh.github.io/senior_task_fdd/task%202/)
 
 ### Task 3 :
 - **psd** file is given and worked collabratively in **gitlab**
 - 5 page section with viewport in a webpage.
 - it should be similar to psd file.
-- [view](https://github.com/shankaresh/senior_task_fdd/tree/master/task%203)
+- [code](https://github.com/shankaresh/senior_task_fdd/tree/master/task%203)
+- [view](https://shankaresh.github.io/senior_task_fdd/task%203/)
 
 ### Task 4 :
 
